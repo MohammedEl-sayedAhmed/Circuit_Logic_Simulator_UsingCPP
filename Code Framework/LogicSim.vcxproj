@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{12FFA797-122E-4E3B-BD26-3520BDC575C9}</ProjectGuid>
+    <RootNamespace>LogicSim</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ActionCut.h" />
+    <ClInclude Include="ActionPaste.h" />
+    <ClInclude Include="ActionSimulate.h" />
+    <ClInclude Include="Actions\Action.h" />
+    <ClInclude Include="Actions\ActionCut.h" />
+    <ClInclude Include="Actions\ActionDelete.h" />
+    <ClInclude Include="Actions\ActionExit.h" />
+    <ClInclude Include="Actions\ActionMove.h" />
+    <ClInclude Include="Actions\ActionMultibleSelect.h" />
+    <ClInclude Include="Actions\ActionPaste.h" />
+    <ClInclude Include="Actions\ActionSelect.h" />
+    <ClInclude Include="Actions\ActionSwitch.h" />
+    <ClInclude Include="Actions\AddANDgate2.h" />
+    <ClInclude Include="Actions\AddBUFF1.h" />
+    <ClInclude Include="Actions\AddConnection.h" />
+    <ClInclude Include="Actions\AddINV1.h" />
+    <ClInclude Include="Actions\AddLed.h" />
+    <ClInclude Include="Actions\AddModule.h" />
+    <ClInclude Include="Actions\AddNANDgate2.h" />
+    <ClInclude Include="Actions\AddNORgate2.h" />
+    <ClInclude Include="Actions\AddORgate2.h" />
+    <ClInclude Include="Actions\AddSwitch.h" />
+    <ClInclude Include="Actions\AddXNORgate2.h" />
+    <ClInclude Include="Actions\AddXORgate2.h" />
+    <ClInclude Include="Actions\ActionCopy.h" />
+    <ClInclude Include="Actions\EditLabel.h" />
+    <ClInclude Include="Actions\Load.h" />
+    <ClInclude Include="Actions\RunSimulation.h" />
+    <ClInclude Include="Actions\Save.h" />
+    <ClInclude Include="Actions\SelectConnection.h" />
+    <ClInclude Include="Actions\SwitchModes.h" />
+    <ClInclude Include="Actions\Truth.h" />
+    <ClInclude Include="AddLabel.h" />
+    <ClInclude Include="ApplicationManager.h" />
+    <ClInclude Include="CMUgraphicsLib\auxil.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CMUgraphicsLib\CMUgraphics.h" />
+    <ClInclude Include="CMUgraphicsLib\colors.h" />
+    <ClInclude Include="CMUgraphicsLib\error.h" />
+    <ClInclude Include="CMUgraphicsLib\image.h" />
+    <ClInclude Include="CMUgraphicsLib\jpegload.h" />
+    <ClInclude Include="CMUgraphicsLib\jpeg\jconfig.h" />
+    <ClInclude Include="CMUgraphicsLib\jpeg\jdct.h" />
+    <ClInclude Include="CMUgraphicsLib\jpeg\jdhuff.h" />
+    <ClInclude Include="CMUgraphicsLib\jpeg\jerror.h" />
+    <ClInclude Include="CMUgraphicsLib\jpeg\jinclude.h" />
+    <ClInclude Include="CMUgraphicsLib\jpeg\jmemsys.h" />
+    <ClInclude Include="CMUgraphicsLib\jpeg\jmorecfg.h" />
+    <ClInclude Include="CMUgraphicsLib\jpeg\jpegint.h" />
+    <ClInclude Include="CMUgraphicsLib\jpeg\jpeglib.h" />
+    <ClInclude Include="CMUgraphicsLib\jpeg\jversion.h" />
+    <ClInclude Include="CMUgraphicsLib\keyqueue.h" />
+    <ClInclude Include="CMUgraphicsLib\mousequeue.h" />
+    <ClInclude Include="CMUgraphicsLib\version.h" />
+    <ClInclude Include="CMUgraphicsLib\windowinput.h" />
+    <ClInclude Include="Components\AND2.h" />
+    <ClInclude Include="Components\BUFF1.h" />
+    <ClInclude Include="Components\Component.h" />
+    <ClInclude Include="Components\Connection.h" />
+    <ClInclude Include="Components\Gate.h" />
+    <ClInclude Include="Components\InputPin.h" />
+    <ClInclude Include="Components\INV1.h" />
+    <ClInclude Include="Components\Led.h" />
+    <ClInclude Include="Components\Module.h" />
+    <ClInclude Include="Components\NAND2.h" />
+    <ClInclude Include="Components\NOR2.h" />
+    <ClInclude Include="Components\OR2.h" />
+    <ClInclude Include="Components\OutputPin.h" />
+    <ClInclude Include="Components\Pin.h" />
+    <ClInclude Include="Components\Switch.h" />
+    <ClInclude Include="Components\XNOR2.h" />
+    <ClInclude Include="Components\XOR2.h" />
+    <ClInclude Include="Copy.h" />
+    <ClInclude Include="Defs.H" />
+    <ClInclude Include="Save.h" />
+    <ClInclude Include="UI\UI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Actions\ActionCut.cpp" />
+    <ClCompile Include="Actions\ActionDelete.cpp" />
+    <ClCompile Include="Actions\ActionExit.cpp" />
+    <ClCompile Include="Actions\ActionMove.cpp" />
+    <ClCompile Include="Actions\ActionMultibleSelect.cpp" />
+    <ClCompile Include="Actions\ActionPaste.cpp" />
+    <ClCompile Include="Actions\ActionSelect.cpp" />
+    <ClCompile Include="Actions\ActionSwitch.cpp" />
+    <ClCompile Include="Actions\AddANDgate2.cpp" />
+    <ClCompile Include="Actions\AddBUFF1.cpp" />
+    <ClCompile Include="Actions\AddConnection.cpp" />
+    <ClCompile Include="Actions\AddINV1.cpp" />
+    <ClCompile Include="Actions\AddLed.cpp" />
+    <ClCompile Include="Actions\AddModule.cpp" />
+    <ClCompile Include="Actions\AddNANDgate2.cpp" />
+    <ClCompile Include="Actions\AddNORgate2.cpp" />
+    <ClCompile Include="Actions\AddORgate2.cpp" />
+    <ClCompile Include="Actions\AddSwitch.cpp" />
+    <ClCompile Include="Actions\AddXNORgate2.cpp" />
+    <ClCompile Include="Actions\AddXORgate2.cpp" />
+    <ClCompile Include="Actions\ActionCopy.cpp" />
+    <ClCompile Include="Actions\EditLabel.cpp" />
+    <ClCompile Include="Actions\Load.cpp" />
+    <ClCompile Include="Actions\RunSimulation.cpp" />
+    <ClCompile Include="Actions\Save.cpp" />
+    <ClCompile Include="Actions\SelectConnection.cpp" />
+    <ClCompile Include="Actions\SwitchModes.cpp" />
+    <ClCompile Include="Actions\Truth.cpp" />
+    <ClCompile Include="ApplicationManager.cpp" />
+    <ClCompile Include="CMUgraphicsLib\auxil.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CMUgraphicsLib\CMUgraphics.cpp" />
+    <ClCompile Include="CMUgraphicsLib\colors.cpp" />
+    <ClCompile Include="CMUgraphicsLib\image.cpp" />
+    <ClCompile Include="CMUgraphicsLib\jpegload.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jcomapi.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jcparam.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jdapimin.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jdapistd.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jdatasrc.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jdcoefct.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jdcolor.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jddctmgr.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jdhuff.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jdinput.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jdmainct.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jdmarker.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jdmaster.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jdmerge.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jdphuff.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jdpostct.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jdsample.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jdtrans.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jerror.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jidctflt.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jidctfst.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jidctint.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jidctred.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jmemmgr.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jmemnobs.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jquant1.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jquant2.c" />
+    <ClCompile Include="CMUgraphicsLib\jpeg\jutils.c" />
+    <ClCompile Include="CMUgraphicsLib\keyqueue.cpp" />
+    <ClCompile Include="CMUgraphicsLib\mousequeue.cpp" />
+    <ClCompile Include="CMUgraphicsLib\windowinput.cpp" />
+    <ClCompile Include="Components\AND2.cpp" />
+    <ClCompile Include="Components\BUFF1.cpp" />
+    <ClCompile Include="Components\Component.cpp" />
+    <ClCompile Include="Components\Connection.cpp" />
+    <ClCompile Include="Components\Gate.cpp" />
+    <ClCompile Include="Components\InputPin.cpp" />
+    <ClCompile Include="Components\INV1.cpp" />
+    <ClCompile Include="Components\Led.cpp" />
+    <ClCompile Include="Components\Module.cpp" />
+    <ClCompile Include="Components\NAND2.cpp" />
+    <ClCompile Include="Components\NOR2.cpp" />
+    <ClCompile Include="Components\OR2.cpp" />
+    <ClCompile Include="Components\OutputPin.cpp" />
+    <ClCompile Include="Components\Pin.cpp" />
+    <ClCompile Include="Components\Switch.cpp" />
+    <ClCompile Include="Components\XNOR2.cpp" />
+    <ClCompile Include="Components\XOR2.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="UI\UI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="File_2_read.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

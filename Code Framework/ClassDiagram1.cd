@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AND2" Collapsed="true">
+    <Position X="5.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ADAAAAAAAAAAAgAAAAAAAAAAAAAACAAAAQAAgAAAAAA=</HashCode>
+      <FileName>Components\AND2.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Component" Collapsed="true">
+    <Position X="6.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAgAAAAACAAAgAgAAAAAAAAAAAACAAAAQBAgAAAAAA=</HashCode>
+      <FileName>Components\Component.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_pGfxInfo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Connection" Collapsed="true">
+    <Position X="7.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAQAAAAAgEAAIAAEAAAAAABCAAAAQAAiAAQAAA=</HashCode>
+      <FileName>Components\Connection.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gate" Collapsed="true">
+    <Position X="5.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAIAAAAAAAAAAAAgAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\Gate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InputPin" Collapsed="true">
+    <Position X="5.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAABAAAAAAAAAAIQAAAAAAAAAA=</HashCode>
+      <FileName>Components\InputPin.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OutputPin" Collapsed="true">
+    <Position X="9" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAIAAAAAAAAAAAAAAAACAAAAEAAAAABAAAAAA=</HashCode>
+      <FileName>Components\OutputPin.h</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="m_Connections" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Pin" Collapsed="true">
+    <Position X="6.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAACAAAAAAAABEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\Pin.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Action" Collapsed="true">
+    <Position X="2.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAQAAAAAACABAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Actions\Action.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AddANDgate2" Collapsed="true">
+    <Position X="2.25" Y="11.5" Width="1.5" />
+    <InheritanceLine Type="Action">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="37.506" Y="2.143" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AECIAAAAAAAARAQAAAAAAAABAwAAAACAAQAAAAAAAAA=</HashCode>
+      <FileName>Actions\AddANDgate2.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UI" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="UI::DsgnMenuItem" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>UI\UI.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="UI::SimMenuItem" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>UI\UI.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CgAAAALAICQAQAQAZEAQEEAIhAAACQQUAABEAAAAkFA=</HashCode>
+      <FileName>UI\UI.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pWind" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ApplicationManager" Collapsed="true">
+    <Position X="3.25" Y="7.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="ApplicationManager::__unnamed_enum_0005_1" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ApplicationManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAIQIQAAEAAAAADAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>ApplicationManager.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pUI" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="CompList" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="window" Collapsed="true">
+    <Position X="0.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>lJITjJAVABAAoEAUADQAkCDGASAH6FKIAEtkaGIGQME=</HashCode>
+      <FileName>CMUgraphicsLib\CMUgraphics.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="GraphicsInfo" Collapsed="true">
+    <Position X="8.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAIAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>UI\UI.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

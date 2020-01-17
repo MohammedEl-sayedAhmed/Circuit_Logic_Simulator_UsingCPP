@@ -1,0 +1,13 @@
+
+*.ipch
+*.db
+*.obj
+*.ilk
+*.exe
+*.log
+*.pdb
+*.tlog
+*.idb
+*.htm
+*.css
+*.xslt

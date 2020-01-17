@@ -1,0 +1,21 @@
+9 
+SWITCH 1 sw1  90  154 
+SWITCH 2 sw2  90  227 
+AND2 3 control  170  169  
+OR2 4 O1 290  225  
+SWITCH 5 s3  97  330 
+XNOR2 6 x1  352  270 
+LED 7 R2  406  182 
+NOT 8 N1  170  302 
+LED 9 Result1 473  297 
+Connections 
+9 
+1  4 1 
+2  4 2 
+2  9 2 
+13  5 1 
+4  9 1 
+5  6 2 
+9  8 1 
+9  6 1 
+6  7 1
